@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(35, 35, 59);
+}
+
+.mainApp{
+  width:800px;
+  margin:auto;
+}
+
+
+
+.header{
+  color:white;
+  width:800px;
+  margin:auto;
+  text-align: center;
+  align-items: center;
+  padding:20px;
+}
+
+hr{
+  border: solid 1px rgb(72, 72, 92);
+  width:800px;
+  margin:auto;
+  text-align: center;
+  align-items: center;
+}
+
+
+.taskinput{
+  width:800px;
+  text-align: left;
+  align-items: center;
+  border-radius: 10px;
+  height: 40px;
+  margin-top:20px;
+  border: solid 1px rgb(72, 72, 92);
+  background-color:  rgb(35, 35, 59);
+  font-size: 18px;
+  padding-left:15px;
+  color:white;
+}
