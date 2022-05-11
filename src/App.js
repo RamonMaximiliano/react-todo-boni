@@ -1,7 +1,7 @@
 import './style/app.css';
 import Header from './component/Header'
 import TaskInput from './component/TaskInput'
-
+import Footer from './component/Footer'
 
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <div className="mainApp">
       <Header/>
       <TaskInput/>
+      <Footer/>
     </div>
   );
 }
@@ -26,7 +27,10 @@ Show list of items
 Click finished item 
 Delete item 
 Clear list
-Add footer 
+-- Add footer 
 
 
  */
+
+
+
