@@ -53,3 +53,26 @@ hr {
   align-items: center;
   margin-top: 600px;
 }
+
+.singletask{
+  display:flex;
+  box-sizing: border-box;
+  width: 800px;
+  background-color:rgb(85, 85, 129);
+  color: white;
+  padding:8px;
+  border-radius: 8px;
+  margin:auto;
+  margin-top:20px;
+  align-items: center;
+}
+
+
+.paragraph{
+  display:flex;
+  justify-content: space-between;
+  width: 750px;
+  margin-left:10px;
+  align-items: center;
+
+}

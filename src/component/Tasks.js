@@ -1,15 +1,18 @@
-import Task from "./TaskInput"
+import { useState } from "react"
 
-const Tasks = ({ tasks }) => {
+function Tasks(props) {
     return (
-        <>
-            {tasks.map((task) => (
-
-                <Task key={task.id} task={task} onDelete={onDelete} onToggle={onToggle} />
-
-            ))}
-        </>
-    )
-
+        <div className="singletask" >
+            <input type="checkbox" id={props.id}>
+            </input>
+            <div className="paragraph">
+                <p>{props.name}</p>
+                <p>{props.id}</p>
+            </div>
+        </div>
+    );
 }
+
 export default Tasks
+
+
