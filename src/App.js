@@ -30,18 +30,17 @@ function App() {
   const submitted = (e) => {
     e.preventDefault()
 
-    //SETTING UP INDEX
+    //SETTING UP INDEX BASED ON THE LAST ITEM INNER TEXT
     let tasksList = document.querySelectorAll("input") 
     let tasksListLength = Array.from(tasksList)
-    console.log(tasksListLength[tasksListLength.length -1].id)
-    let identification = Number(0)
+    let identification = 0
 
-    if(tasksListLength.length <= 0){
-      identification = Number(0)
+    if(tasksListLength.length <= 1){
+      identification = 0
     } else {
       identification = Number(tasksListLength[tasksListLength.length -1].id)
     }
-    //SETTING UP INDEX
+    //SETTING UP INDEX BASED ON THE LAST ITEM INNER TEXT
 
     let newTask = ''
 
@@ -119,7 +118,7 @@ export default App;
 -- Add index to item
 -- Add item
 -- Show list of items
-Check bug not a number
+-- Check bug not a number
 Check bug continue adding even without text on input box
 -- Click finished item 
 -- Delete item 
