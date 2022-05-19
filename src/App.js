@@ -76,6 +76,12 @@ function App() {
     }
   }
 
+  const deleteSingle = function deleteSingle(singleDelete){
+   const deletedSingle = taskList.filter(function(indexItem){
+      return indexItem.id != singleDelete
+   })
+   taskListupdate(deletedSingle)
+  }
 
   return (
     <div className="mainApp">
@@ -84,7 +90,7 @@ function App() {
  */}      <TaskInput typed={taskInfoMethod} onsubmitText={submitted} key='5' />
 
       {
-        taskList.map(item => <Tasks name={item.name} id={item.id} checked={check} />)
+        taskList.map(item => <Tasks name={item.name} id={item.id} checked={check} deletesingle={deleteSingle}/>)
       }
       <Delete delete={cleanList} />
       <Footer />
@@ -104,7 +110,8 @@ export default App;
 -- Show list of items
 Check bug continue adding even without text on input box
 -- Click finished item 
-Delete item 
+-- Delete item 
+Deletando de novo dois items com o mesmo numero, fazer com que index não sejam nunca repetidos igual outra to do list
 -- Clear list
 -- Add footer 
 

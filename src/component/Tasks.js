@@ -8,7 +8,7 @@ function Tasks(props) {
             </input>
             <div className="paragraph">
                 <p className={`number${props.id}`}>{props.name}</p>
-                <p>{props.id}</p>
+                <p className="taskNumber" onClick={() => props.deletesingle(props.id)}>{props.id}</p>
             </div>
         </div>
     );

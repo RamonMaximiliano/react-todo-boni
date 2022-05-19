@@ -52,6 +52,7 @@ hr {
   text-align: center;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .singletask {
@@ -101,4 +102,16 @@ hr {
 
 .deleteButton:hover {
   background-color: rgb(119, 119, 177);
+}
+
+
+.taskNumber{
+  cursor: pointer;
+  background-color: rgb(35, 35, 116);
+  width:25px;
+  height:25px;
+  align-items: center;
+  text-align: center;
+  margin:0px;
+  border-radius: 50%;
 }
