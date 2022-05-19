@@ -30,7 +30,19 @@ function App() {
   const submitted = (e) => {
     e.preventDefault()
 
-    let identification = taskList.length
+    //SETTING UP INDEX
+    let tasksList = document.querySelectorAll("input") 
+    let tasksListLength = Array.from(tasksList)
+    console.log(tasksListLength[tasksListLength.length -1].id)
+    let identification = Number(0)
+
+    if(tasksListLength.length <= 0){
+      identification = Number(0)
+    } else {
+      identification = Number(tasksListLength[tasksListLength.length -1].id)
+    }
+    //SETTING UP INDEX
+
     let newTask = ''
 
     if (taskInfo == '') {
@@ -38,12 +50,11 @@ function App() {
     } else {
 
       newTask = {
-        id: identification + 1,
+        id: Number(identification) + Number(1),
         name: taskInfo
       }
       taskListupdate([...taskList, newTask]);
     }
-    console.log(taskList)
     document.getElementById("inputText").value = ''
     taskInfoMethod('')
   }
@@ -108,10 +119,11 @@ export default App;
 -- Add index to item
 -- Add item
 -- Show list of items
+Check bug not a number
 Check bug continue adding even without text on input box
 -- Click finished item 
 -- Delete item 
-Deletando de novo dois items com o mesmo numero, fazer com que index não sejam nunca repetidos igual outra to do list
+-- Deletando de novo dois items com o mesmo numero, fazer com que index não sejam nunca repetidos igual outra to do list
 -- Clear list
 -- Add footer 
 
