@@ -51,7 +51,7 @@ hr {
   margin: auto;
   text-align: center;
   align-items: center;
-  margin-top: 600px;
+  margin-top: 20px;
 }
 
 .singletask{
@@ -67,7 +67,6 @@ hr {
   align-items: center;
 }
 
-
 .paragraph{
   display:flex;
   justify-content: space-between;
@@ -75,4 +74,26 @@ hr {
   margin-left:10px;
   align-items: center;
 
+}
+
+.delete{
+  width:100px;
+  margin:auto;
+}
+
+.deleteButton{
+  width:100px;
+  margin:auto;
+  height: 25px;
+  background-color:rgb(78, 78, 165);
+  color:white;
+  border-style: none;
+  border-radius: 2px;
+  margin-top: 600px;
+  align-items: center;
+  text-align: center;
+}
+
+.deleteButton:hover{
+  background-color:rgb(119, 119, 177);
 }

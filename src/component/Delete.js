@@ -1,7 +1,7 @@
 function Delete(props) {
     return (
-        <div>
-            <button>Clean list</button>
+        <div className="delete">
+            <button className="deleteButton" onClick={props.delete}>Clean list</button>
         </div>
     );
 }

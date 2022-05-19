@@ -37,7 +37,7 @@ function App() {
     } else {
 
       newTask = {
-        id: identification,
+        id: identification + 1,
         name: taskInfo
       }
        taskListupdate([...taskList, newTask]);
@@ -47,6 +47,22 @@ function App() {
      taskInfoMethod('')
  }
 
+
+const cleanList  = function cleanList(){
+  taskListupdate([])
+}
+
+const check = function checkItem(checked){
+  console.log(checked)
+
+/* 
+  itemResult.addEventListener("click", function checked(event) {
+    event.target.style.textDecoration = "line-through";
+}) */
+
+}
+
+
   return (
     <div className="mainApp">
       <Header />
@@ -54,16 +70,15 @@ function App() {
  */}      <TaskInput typed={taskInfoMethod} onsubmitText={submitted} key='5'/>
 
       {
-        taskList.map(item => <Tasks name={item.name} id={item.id} />)
+        taskList.map(item => <Tasks name={item.name} id={item.id} checked={check} />)
       }
-      <Delete/>
+      <Delete delete={cleanList}/>
       <Footer />
     </div>
   );
 }
 
 export default App;
-
 
 
 /* 
@@ -76,8 +91,19 @@ export default App;
 Check bug continue adding even without text on input box
 Click finished item 
 Delete item 
-Clear list
+-- Clear list
 -- Add footer 
+
+
+
+cada input já tem um ID, 
+
+
+
+
+
+
+
 */
 
 

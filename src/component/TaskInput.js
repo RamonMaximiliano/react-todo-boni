@@ -10,7 +10,7 @@ function TaskInput(props) {
         /* o onSubmit abaixo esta trigando a function submitted, que vai submeter a task finalizada e setar de novo o state para zero */
         <form onSubmit={props.onsubmitText}>
             {/*  o onChange do input abaixo esta setando o state da task como o que estiver sendo escrito  */}
-            <input type="text" placeHolder="+ Adicione uma tarefa" className="taskinput" onChange={e => setTask(e.target.value)} id="inputText"></input>
+            <input type="text" placeholder="+ Adicione uma tarefa" className="taskinput" onChange={e => setTask(e.target.value)} id="inputText"></input>
         </form>
     );
 
