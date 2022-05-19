@@ -45,7 +45,7 @@ hr {
 }
 
 
-.footer{
+.footer {
   color: white;
   width: 800px;
   margin: auto;
@@ -54,39 +54,44 @@ hr {
   margin-top: 20px;
 }
 
-.singletask{
-  display:flex;
+.singletask {
+  display: flex;
   box-sizing: border-box;
   width: 800px;
-  background-color:rgb(85, 85, 129);
+  background-color: rgb(85, 85, 129);
   color: white;
-  padding:8px;
+  padding: 8px;
   border-radius: 8px;
-  margin:auto;
-  margin-top:20px;
+  margin: auto;
+  margin-top: 20px;
   align-items: center;
 }
 
-.paragraph{
-  display:flex;
+.checkedColor {
+  background-color: rgb(53, 53, 155);
+}
+
+
+.paragraph {
+  display: flex;
   justify-content: space-between;
   width: 750px;
-  margin-left:10px;
+  margin-left: 10px;
   align-items: center;
 
 }
 
-.delete{
-  width:100px;
-  margin:auto;
+.delete {
+  width: 100px;
+  margin: auto;
 }
 
-.deleteButton{
-  width:100px;
-  margin:auto;
+.deleteButton {
+  width: 100px;
+  margin: auto;
   height: 25px;
-  background-color:rgb(78, 78, 165);
-  color:white;
+  background-color: rgb(78, 78, 165);
+  color: white;
   border-style: none;
   border-radius: 2px;
   margin-top: 600px;
@@ -94,6 +99,6 @@ hr {
   text-align: center;
 }
 
-.deleteButton:hover{
-  background-color:rgb(119, 119, 177);
+.deleteButton:hover {
+  background-color: rgb(119, 119, 177);
 }
