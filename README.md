@@ -1,6 +1,6 @@
 # react-todo-boni
 
-## HTML - CSS - JavaScript - React
+## Html - Css - JavaScript - React
 
 ## Português:
 
