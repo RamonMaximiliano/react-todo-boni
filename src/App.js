@@ -120,6 +120,7 @@ export default App;
 -- Show list of items
 -- Check bug not a number
 Check bug continue adding even without text on input box
+Check the bug of unchecking the items as you go deleting them
 -- Click finished item 
 -- Delete item 
 -- Deletando de novo dois items com o mesmo numero, fazer com que index não sejam nunca repetidos igual outra to do list
