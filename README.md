@@ -1,7 +1,7 @@
 # react-todo-boni
 
 ## Tech:
-HTML - CSS - JavaScript - React
+## HTML - CSS - JavaScript - React
 
 ## Português:
 
