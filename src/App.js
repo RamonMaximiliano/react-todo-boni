@@ -31,14 +31,14 @@ function App() {
     e.preventDefault()
 
     //SETTING UP INDEX BASED ON THE LAST ITEM INNER TEXT
-    let tasksList = document.querySelectorAll("input") 
+    let tasksList = document.querySelectorAll("input")
     let tasksListLength = Array.from(tasksList)
     let identification = 0
 
-    if(tasksListLength.length <= 1){
+    if (tasksListLength.length <= 1) {
       identification = 0
     } else {
-      identification = Number(tasksListLength[tasksListLength.length -1].id)
+      identification = Number(tasksListLength[tasksListLength.length - 1].id)
     }
     //SETTING UP INDEX BASED ON THE LAST ITEM INNER TEXT
 
@@ -67,7 +67,6 @@ function App() {
     const checkedItem = taskList.filter(function (item) {
       return item.id == checked
     })
-
     let selector = checkedItem[0].id.toString()
     let itemChecked = document.querySelector(`p.number${selector}`)
     let itemSelected = document.getElementById(`${selector}`)
@@ -86,11 +85,11 @@ function App() {
     }
   }
 
-  const deleteSingle = function deleteSingle(singleDelete){
-   const deletedSingle = taskList.filter(function(indexItem){
+  const deleteSingle = function deleteSingle(singleDelete) {
+    const deletedSingle = taskList.filter(function (indexItem) {
       return indexItem.id != singleDelete
-   })
-   taskListupdate(deletedSingle)
+    })
+    taskListupdate(deletedSingle)
   }
 
   return (
@@ -100,7 +99,7 @@ function App() {
  */}      <TaskInput typed={taskInfoMethod} onsubmitText={submitted} key='5' />
 
       {
-        taskList.map(item => <Tasks name={item.name} id={item.id} checked={check} deletesingle={deleteSingle}/>)
+        taskList.map(item => <Tasks name={item.name} id={item.id} checked={check} deletesingle={deleteSingle} />)
       }
       <Delete delete={cleanList} />
       <Footer />
@@ -120,7 +119,7 @@ export default App;
 -- Show list of items
 -- Check bug not a number
 Check bug continue adding even without text on input box
-Check the bug of unchecking the items as you go deleting them
+Check the bug of unchecking the items as you go deleting them (conforme pesquisa, o ideal é atualizar o checked no item input, com um state variable)
 -- Click finished item 
 -- Delete item 
 -- Deletando de novo dois items com o mesmo numero, fazer com que index não sejam nunca repetidos igual outra to do list
