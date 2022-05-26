@@ -52,7 +52,7 @@ hr {
   text-align: center;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .singletask {
@@ -114,4 +114,29 @@ hr {
   text-align: center;
   margin: 0px;
   border-radius: 50%;
+}
+
+
+.link{
+  text-decoration: none;
+  color:white;
+  width:120px;
+  margin:auto;
+  margin-bottom: 50px;
+}
+
+.mainAbout{
+  text-decoration: none;
+  width:300px;
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:150px;
+}
+
+.about{
+  text-decoration: none;
+   color:white;
+  margin-top:50px;
 }
